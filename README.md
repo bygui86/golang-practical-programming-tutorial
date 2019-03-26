@@ -1,6 +1,8 @@
 
 # GoLang tutorials
 
+If you are creating a Go application that will not have subpackages, you can develop the code anywhere on your filesystem. However, since this application (and most other apps you will develop) will use subpackages, your code must live in your GOPATH folder.
+
 ## Topics
 
 * hello world
@@ -31,6 +33,7 @@
 * web
   * server
   * client
+* sleep
 
 ---
 
@@ -48,11 +51,11 @@
   * arguments
   * flags
 * environment variable
-* panic
 * defer
 * db connection
   * read
   * write
+* panic
 
 ### Advanced topics
 
