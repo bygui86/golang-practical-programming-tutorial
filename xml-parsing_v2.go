@@ -7,7 +7,6 @@ import (
 	"net/http"
 )
 
-// In Go we refer to an array as a 'slice'
 var washPostXML = []byte(`
 <sitemapindex>
    <sitemap>

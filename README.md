@@ -10,9 +10,13 @@ If you are creating a Go application that will not have subpackages, you can dev
 * constants
 * functions
 * pointers
+* struct
+* null check
 * methods
   * pointer receiver
   * value receiver
+* init method
+* packages
 * multiple-return
 * nested-import
 * types
@@ -21,11 +25,14 @@ If you are creating a Go application that will not have subpackages, you can dev
 * float
 * math
 * if-else
+* switch
 * loops
 * data structures
   * array
+  * slice
   * map
-* struct
+  * range
+  * list
 * print
 * parsing
   * xml
@@ -34,48 +41,58 @@ If you are creating a Go application that will not have subpackages, you can dev
   * server
   * client
 * sleep
+* lambda
+* shift
+* defer
+* panic
+* file
+  * reading
+  * writing
+* environment variable
+  * get
+  * set
+* logs
+  * normal
+  * level + format
+  * to file
 
 ---
 
 ## Open topics
 
-* packages (combine multiple go files)
-* switch
-* null check
-* data structure
-  * list
-  * set
 * parsing
-  * json
+  * json - `separate sample from web-server`
+  * url
+* grpc
+* websocket
 * command line
   * arguments
   * flags
-* environment variable
-* defer
-* db connection
-  * read
-  * write
-* panic
 
 ### Advanced topics
 
-* Timeouts
-* Non-Blocking Channel Operations
-* Closing Channels
-* Range over Channels
-* Timers
-* Tickers
-* Epoch
-* Worker Pools
-* Rate Limiting
-* Atomic Counters
-* Goroutines
-* Mutex
-* URL Parsing
-* SHA1 Hashes
-* Base64 Encoding
-* Reading Files
-* Writing Files
+* gochannels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
+* goroutines   https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
+* goroutine pooling
+* modules
+* timeouts
+* non-blocking channel operations
+* closing channels
+* range over channels
+* testing
+* timers
+* tickers
+* epoch
+* worker pools
+* rate limiting
+* atomic counters
+* mutex
+* sha1 hashes
+* base64 encoding
+
+### Tools
+
+* Govendor   https://github.com/kardianos/govendor
 
 ---
 

@@ -21,4 +21,16 @@ func main() {
 	fmt.Println("Removed Timmy from grades map")
 	delete(grades, "Timmy")
 	fmt.Println(grades)
+
+	kvs := map[string]string{"a": "apple", "b": "banana"}
+	for key, value := range kvs {
+		fmt.Printf("%s -> %s\n", key, value)
+	}
+
+	value, ok := kvs["c"]
+	if ok {
+		fmt.Println("Value PRESENT:", value)
+	} else {
+		fmt.Println("Value NOT PRESENT")
+	}
 }
