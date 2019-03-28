@@ -90,6 +90,20 @@ If you are creating a Go application that will not have subpackages, you can dev
 * sha1 hashes
 * base64 encoding
 
+### Specific tecnologies
+
+* db
+  * `[OK]` mysql
+  * `[OK]` cassandra
+  * `[TODO]` mongodb
+  * `[TODO]` mongodb
+* protocols
+  * `[OK]` http/rest
+  * `[TODO]` grpc
+  * `[TODO]` websocket
+* `[OK]` kafka
+* `[OK]` dockerfile
+
 ### Tools
 
 * Govendor   https://github.com/kardianos/govendor
