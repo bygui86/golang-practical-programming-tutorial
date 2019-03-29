@@ -55,21 +55,19 @@ If you are creating a Go application that will not have subpackages, you can dev
   * normal
   * level + format
   * to file
-
----
-
-## Open topics
-
-* parsing
-  * json - `separate sample from web-server`
-  * url
-* grpc
-* websocket
 * command line
   * arguments
   * flags
 
-### Advanced topics
+---
+
+## Open basic topics
+
+* parsing
+  * json - `separate sample from web-server`
+  * url
+
+### Open advanced topics
 
 * gochannels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
 * goroutines   https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
@@ -79,7 +77,6 @@ If you are creating a Go application that will not have subpackages, you can dev
 * non-blocking channel operations
 * closing channels
 * range over channels
-* testing
 * timers
 * tickers
 * epoch
@@ -89,6 +86,7 @@ If you are creating a Go application that will not have subpackages, you can dev
 * mutex
 * sha1 hashes
 * base64 encoding
+* testing
 
 ### Specific tecnologies
 
@@ -114,6 +112,7 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 * https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/ - `IN PROGRESS`
 	[next: Goroutines - Concurrency in Goprogramming]
-* https://gobyexample.com/ - `TODO`
+* https://gobyexample.com/ - `IN PROGRESS`
+	[next: Variadic Functions]
 * https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html - `TODO`
 * https://www.golang-book.com/books/intro - `TODO`
