@@ -5,6 +5,8 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 ## Topics
 
+### Basic
+
 * hello world
 * variables
 * constants
@@ -35,13 +37,15 @@ If you are creating a Go application that will not have subpackages, you can dev
   * list
 * print
 * parsing
-  * xml
-  * html
+  * number
+  * xml (web-server_v4.go, xml-parsing_v1.go, xml-parsing_v2.go, xml-parsing_v3.go)
+  * html (web-server_v3.go)
+  * json
+  * url
 * web
   * server
   * client
 * sleep
-* lambda
 * shift
 * defer
 * panic
@@ -58,49 +62,79 @@ If you are creating a Go application that will not have subpackages, you can dev
 * command line
   * arguments
   * flags
+* lambda
+* closures
+* variadic functions
+* interface
+* error
+* time
+  * formatting
+  * parsing
+* epoch
+* alias
+* strings
+  * formatting
+  * functions
+* regular expressions
+* sha1 hashes
+* base64 encoding
+* sorting
+* sorting by functions
+* exit
+
+### Advanced
+
+* (unix) signals
+* timer & ticker
 
 ---
 
-## Open basic topics
+## Open topics
 
-* parsing
-  * json - `separate sample from web-server`
-  * url
+### Basic
 
-### Open advanced topics
+:white_check_mark: `DONE`
 
-* gochannels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
+### Advanced
+
 * goroutines   https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
 * goroutine pooling
-* modules
+* channels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
+* channel buffering
+* channel synchronization
+* channel directions
+* select
 * timeouts
 * non-blocking channel operations
 * closing channels
 * range over channels
-* timers
-* tickers
-* epoch
 * worker pools
 * rate limiting
 * atomic counters
 * mutex
-* sha1 hashes
-* base64 encoding
-* testing
+* stateful goroutines
+* spawning processes
+* exec'ing processes
 
-### Specific tecnologies
+### News
+
+* modules
+
+## Specific tecnologies
 
 * db
-  * `[OK]` mysql
-  * `[OK]` cassandra
+  * `[OK]` mysql > see [repo](https://github.com/bygui86/go-todo-rest-api-example)
+  * `[OK]` cassandra > see [repo](https://github.com/bygui86/go-rest-cassandra)
   * `[TODO]` mongodb
-  * `[TODO]` mongodb
+  * `[TODO]` redis
 * protocols
-  * `[OK]` http/rest
+  * `[OK]` http/rest > see [repo](https://github.com/bygui86/go-rest-cassandra)
   * `[TODO]` grpc
   * `[TODO]` websocket
-* `[OK]` kafka
-* `[OK]` dockerfile
+* `[OK]` kafka > see [repo](https://github.com/bygui86/go-kafka)
+* `[OK]` dockerfile > see [sample](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
+* `[OK]` health-check endpoint > see [repo](https://github.com/bygui86/go-service)
+* `[TODO]` testing
 
 ### Tools
 
