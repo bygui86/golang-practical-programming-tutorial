@@ -7,7 +7,7 @@ func main() {
 	// Unlike arrays, slices are typed only by the elements they contain (not the number
 	// of elements). To create an empty slice with non-zero length, use the builtin make.
 	// Here we make a slice of strings of length 3 (initially zero-valued).
-	s := make([]string, 3)
+	s := make([]string, 4)
 	fmt.Println("emp:", s)
 
 	// We can set and get just like with arrays.
@@ -15,9 +15,11 @@ func main() {
 	s[1] = "b"
 	s[2] = "c"
 	fmt.Println("set:", s)
-	fmt.Println("get:", s[2])
+	fmt.Println("get:", s[3])
 
 	// len returns the length of the slice as expected.
+	// The length is the declared one creating the slice, it does not matter if the number
+	// of objects inside it is the same.
 	fmt.Println("len:", len(s))
 
 	// In addition to these basic operations, slices support several more that

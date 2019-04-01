@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// In Go, an _array_ is a numbered sequence of elements of a specific length.
+// In Go, an array is a fixed-length numbered sequence of elements.
 func main() {
 
 	// Here we create an array `a` that will hold exactly

@@ -13,10 +13,10 @@ type car struct {
 }
 
 // The method gets a copy of the object (receiver type), so you cannot actually modify it here, you can only take actions or do something like coming up with a calculation.
-func (c *car) kmh() float64 {
+func (c car) kmh() float64 {
 	return float64(c.gas_pedal) * (c.top_speed_kmh / uint16_max)
 }
-func (c *car) mph() float64 {
+func (c car) mph() float64 {
 	return float64(c.gas_pedal) * (c.top_speed_kmh / kmh_mph_factor / uint16_max)
 }
 
