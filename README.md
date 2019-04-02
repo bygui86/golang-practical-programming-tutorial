@@ -120,7 +120,7 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 ### News
 
-* modules
+* modules (try `go help modules`)
 
 ## Specific tecnologies
 
