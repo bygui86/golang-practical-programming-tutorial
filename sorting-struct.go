@@ -29,22 +29,29 @@ func main() {
 	jane := person{"Jane", 29}
 
 	persons := []person{matt, jane, john}
-	usingFunction(persons)
+	fmt.Printf("Persons pointer: %p\n", &persons)
+	usingFunction(&persons)
 	fmt.Println()
-	usingPointerReceiver(persons)
+
+	persons = []person{john, jane, matt}
+	fmt.Printf("Persons pointer: %p\n", &persons)
+	usingPointerReceiver(&persons)
 }
 
-func usingFunction(persons []person) {
-	fmt.Println("Persons:", persons)
+func usingFunction(persons *[]person) {
+	fmt.Printf("Persons pointer in usingFunction: %p\n", persons)
+	fmt.Println("Persons:", *persons)
 	// Use 'persons[:]' for an array and 'persons' for a slice
-	sort.Slice(persons, func(i, j int) bool {
-		return persons[i].Age < persons[j].Age
+	// sort.Slice(*persons[:], func(i, j int) bool {
+	sort.Slice(*persons, func(i, j int) bool {
+		return (*persons)[i].Age < (*persons)[j].Age
 	})
-	fmt.Println("Persons sorted by age:", persons)
+	fmt.Println("Persons sorted by age:", *persons)
 }
 
-func usingPointerReceiver(persons []person) {
-	fmt.Println("Persons:", persons)
-	sort.Sort(byAge(persons))
-	fmt.Println("Persons sorted by age:", persons)
+func usingPointerReceiver(persons *[]person) {
+	fmt.Printf("Persons pointer in usingPointerReceiver: %p\n", &persons)
+	fmt.Println("Persons:", *persons)
+	sort.Sort(byAge(*persons))
+	fmt.Println("Persons sorted by age:", *persons)
 }

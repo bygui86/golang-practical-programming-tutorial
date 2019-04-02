@@ -80,12 +80,14 @@ If you are creating a Go application that will not have subpackages, you can dev
 * base64 encoding
 * sorting
 * sorting by functions
+* recursion
 * exit
 
 ### Advanced
 
 * (unix) signals
 * timer & ticker
+* goroutines - `IN PROGRESS`
 
 ---
 
