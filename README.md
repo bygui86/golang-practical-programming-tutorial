@@ -82,11 +82,15 @@ If you are creating a Go application that will not have subpackages, you can dev
 * sorting by functions
 * recursion
 * exit
+* casting
+* reflection
 
 ### Advanced
 
 * (unix) signals
 * timer & ticker
+* dynamic-type
+* type-assertion - `IN PROGRESS`
 * goroutines - `IN PROGRESS`
 
 ---
@@ -149,6 +153,6 @@ If you are creating a Go application that will not have subpackages, you can dev
 * https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/ - `IN PROGRESS`
 	[next: Goroutines - Concurrency in Goprogramming]
 * https://gobyexample.com/ - `IN PROGRESS`
-	[next: Variadic Functions]
+	[next: Goroutines]
 * https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html - `TODO`
 * https://www.golang-book.com/books/intro - `TODO`
