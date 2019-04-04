@@ -129,18 +129,22 @@ If you are creating a Go application that will not have subpackages, you can dev
 ## Specific tecnologies
 
 * db
-  * `[OK]` mysql > see [repo](https://github.com/bygui86/go-todo-rest-api-example)
-  * `[OK]` cassandra > see [repo](https://github.com/bygui86/go-rest-cassandra)
+  * `[OK]` mysql > see [this repo](https://github.com/bygui86/go-todo-rest-api-example)
+  * `[OK]` cassandra > see [this repo](https://github.com/bygui86/go-rest-cassandra)
   * `[TODO]` mongodb
   * `[TODO]` redis
 * protocols
-  * `[OK]` http/rest > see [repo](https://github.com/bygui86/go-rest-cassandra)
+  * `[OK]` http/rest > see [this repo](https://github.com/bygui86/go-rest-cassandra) and [this repo](https://github.com/bygui86/go-service)
   * `[TODO]` grpc
   * `[TODO]` websocket
-* `[OK]` kafka > see [repo](https://github.com/bygui86/go-kafka)
-* `[OK]` dockerfile > see [sample](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
-* `[OK]` health-check endpoint > see [repo](https://github.com/bygui86/go-service)
-* `[TODO]` testing
+* docker
+  * `[OK]` dockerfile > see [this repo](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
+* others
+  * `[OK]` protobuf > see [this repo](https://github.com/bygui86/go-protobuf)
+  * `[OK]` kafka > see [this repo](https://github.com/bygui86/go-kafka)
+* testing
+  * `[TODO]` principles
+  * `[TODO]` tools
 
 ### Tools
 
@@ -150,9 +154,15 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 ## Links
 
+### Tutorials
 * https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/ - `IN PROGRESS`
 	[next: Goroutines - Concurrency in Goprogramming]
 * https://gobyexample.com/ - `IN PROGRESS`
 	[next: Goroutines]
 * https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html - `TODO`
 * https://www.golang-book.com/books/intro - `TODO`
+
+### Govendor
+    https://github.com/kardianos/govendor
+    https://blog.gopheracademy.com/advent-2015/vendor-folder/
+    https://github.com/kardianos/spider

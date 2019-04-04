@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"tutorials/golang-practical-programming-tutorial/packages/domain"
+
+	"github.com/bygui86/golang-practical-programming-tutorial/packages/domain"
 )
 
 func main() {
