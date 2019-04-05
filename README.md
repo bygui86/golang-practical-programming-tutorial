@@ -135,7 +135,7 @@ If you are creating a Go application that will not have subpackages, you can dev
   * `[TODO]` redis
 * protocols
   * `[OK]` http/rest > see [this repo](https://github.com/bygui86/go-rest-cassandra) and [this repo](https://github.com/bygui86/go-service)
-  * `[TODO]` grpc
+  * `[OK]` grpc > see [this repo](https://github.com/bygui86/grpc-samples)
   * `[TODO]` websocket
 * docker
   * `[OK]` dockerfile > see [this repo](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
@@ -144,6 +144,7 @@ If you are creating a Go application that will not have subpackages, you can dev
   * `[OK]` kafka > see [this repo](https://github.com/bygui86/go-kafka)
 * testing
   * `[TODO]` principles
+  * `[TODO]` moking   https://godoc.org/google.golang.org/grpc/examples/helloworld/mock_helloworld
   * `[TODO]` tools
 
 ### Tools

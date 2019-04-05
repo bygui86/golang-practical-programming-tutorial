@@ -5,9 +5,13 @@ import (
 )
 
 func main() {
-	var qty int = 3
-	fmt.Println("int:", qty)
+	integer := 3
+	fmt.Println("int:", integer)
+	fmt.Println("int32:", int32(integer))
+	fmt.Println("float64:", float64(integer))
 
-	qtyInt32 := int32(qty)
-	fmt.Println("int32:", qtyInt32)
+	floating := 3.14159
+	fmt.Println("float64:", floating)
+	fmt.Println("int32:", int32(floating))
+	fmt.Println("int:", int(integer))
 }
