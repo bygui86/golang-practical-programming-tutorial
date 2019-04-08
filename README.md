@@ -103,6 +103,7 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 ### Advanced
 
+* enum (iota)
 * goroutines   https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
 * goroutine pooling
 * channels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8

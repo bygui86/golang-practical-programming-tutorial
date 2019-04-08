@@ -7,6 +7,12 @@ import (
 
 // Parsing numbers from strings is a basic but common task in many programs
 func main() {
+	stringToNumber()
+	fmt.Println()
+	numberToString()
+}
+
+func stringToNumber() {
 	// With ParseFloat, this 64 tells how many bits of precision to parse.
 	f, _ := strconv.ParseFloat("1.234", 64)
 	fmt.Println(f)
@@ -34,4 +40,9 @@ func main() {
 	// Parse Int to String
 	s, e := strconv.Itoa(1)
 	fmt.Println(s)
+}
+
+func numberToString() {
+	f := fmt.Sprintf("%f", 123.456)
+	fmt.Println(f) // f == "123.456000"
 }
