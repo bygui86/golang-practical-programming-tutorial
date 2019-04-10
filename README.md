@@ -75,6 +75,7 @@ If you are creating a Go application that will not have subpackages, you can dev
 * strings
   * formatting
   * functions
+  * concatenation
 * regular expressions
 * sha1 hashes
 * base64 encoding
@@ -84,13 +85,15 @@ If you are creating a Go application that will not have subpackages, you can dev
 * exit
 * casting
 * reflection
+* iota
 
 ### Advanced
 
 * (unix) signals
 * timer & ticker
 * dynamic-type
-* type-assertion - `IN PROGRESS`
+* type-assertion
+* enum
 * goroutines - `IN PROGRESS`
 
 ---
@@ -103,7 +106,6 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 ### Advanced
 
-* enum (iota)
 * goroutines   https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
 * goroutine pooling
 * channels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
@@ -161,8 +163,9 @@ If you are creating a Go application that will not have subpackages, you can dev
 	[next: Goroutines - Concurrency in Goprogramming]
 * https://gobyexample.com/ - `IN PROGRESS`
 	[next: Goroutines]
-* https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html - `TODO`
-* https://www.golang-book.com/books/intro - `TODO`
+* https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html
+* https://www.golang-book.com/books/intro
+* https://dlintw.github.io/gobyexample/public/index.html#by-sequence
 
 ### Govendor
     https://github.com/kardianos/govendor
