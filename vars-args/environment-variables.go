@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 var (
@@ -15,6 +16,8 @@ func main() {
 	getEnvVar(&getVarKey)
 	fmt.Println()
 	setEnvVar(&setVarKey, &setVarValue)
+	fmt.Println()
+	printAllEnvVars()
 }
 
 func getEnvVar(envVarKey *string) {
@@ -31,4 +34,11 @@ func setEnvVar(envVarKey *string, envVarValue *string) {
 	}
 	envVarValueTemp := os.Getenv(*envVarKey)
 	fmt.Println("\t", *envVarKey, envVarValueTemp)
+}
+
+func printAllEnvVars() {
+	for _, e := range os.Environ() {
+		pair := strings.Split(e, "=")
+		fmt.Println(pair[0])
+	}
 }

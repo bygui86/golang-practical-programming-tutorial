@@ -6,7 +6,6 @@ If you are creating a Go application that will not have subpackages, you can dev
 ## Topics
 
 ### Basic
-
 * hello world
 * variables
 * constants
@@ -88,86 +87,93 @@ If you are creating a Go application that will not have subpackages, you can dev
 * iota
 
 ### Advanced
-
 * (unix) signals
 * timer & ticker
 * dynamic-type
 * type-assertion
 * enum
-* goroutines - `IN PROGRESS`
+* goroutines
+  * pooling
+  * rate limiting
+  * atomic counters
+  * mutex
+  * stateful
+* channels
+  * directions
+  * buffering
+  * synchronization
+  * select
+  * timeouts
+  * non-blocking operations
+  * closing
+  * range over
+* spawning processes
+* exec'ing processes
 
 ---
 
 ## Open topics
 
-### Basic
-
-:white_check_mark: `DONE`
-
 ### Advanced
-
-* goroutines   https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
-* goroutine pooling
-* channels   https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
-* channel buffering
-* channel synchronization
-* channel directions
-* select
-* timeouts
-* non-blocking channel operations
-* closing channels
-* range over channels
-* worker pools
-* rate limiting
-* atomic counters
-* mutex
-* stateful goroutines
-* spawning processes
-* exec'ing processes
-
-### News
-
 * modules (try `go help modules`)
 
 ## Specific tecnologies
-
 * db
-  * `[OK]` mysql > see [this repo](https://github.com/bygui86/go-todo-rest-api-example)
-  * `[OK]` cassandra > see [this repo](https://github.com/bygui86/go-rest-cassandra)
-  * `[TODO]` mongodb
-  * `[TODO]` redis
+  - [x] mysql > see [this repo](https://github.com/bygui86/go-todo-rest-api-example)
+  - [x] cassandra > see [this repo](https://github.com/bygui86/go-rest-cassandra)
+  - [ ] mongodb
+  - [ ] redis
+  - [ ] solr
 * protocols
-  * `[OK]` http/rest > see [this repo](https://github.com/bygui86/go-rest-cassandra) and [this repo](https://github.com/bygui86/go-service)
-  * `[OK]` grpc > see [this repo](https://github.com/bygui86/grpc-samples)
-  * `[TODO]` websocket
+  - [x] http/rest > see [this repo](https://github.com/bygui86/go-rest-cassandra) and [this repo](https://github.com/bygui86/go-service)
+  - [x] grpc > see [this repo](https://github.com/bygui86/grpc-samples)
+  - [ ] websocket > see [this repo](https://github.com/bygui86/websocket-samples)
 * docker
-  * `[OK]` dockerfile > see [this repo](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
+  - [x] dockerfile > see [this repo](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
 * others
-  * `[OK]` protobuf > see [this repo](https://github.com/bygui86/go-protobuf)
-  * `[OK]` kafka > see [this repo](https://github.com/bygui86/go-kafka)
+  - [x] protobuf > see [this repo](https://github.com/bygui86/go-protobuf)
+  - [x] kafka > see [this repo](https://github.com/bygui86/go-kafka)
 * testing
-  * `[TODO]` principles
-  * `[TODO]` moking   https://godoc.org/google.golang.org/grpc/examples/helloworld/mock_helloworld
-  * `[TODO]` tools
+  - [ ] principles
+  - [ ] moking
+  - [ ] tools
 
 ### Tools
-
-* Govendor   https://github.com/kardianos/govendor
+- [x] Govendor
+- [ ] Go kit
+  * https://dev.to/napolux/how-to-write-a-microservice-in-go-with-go-kit-a66
+  * https://medium.com/@shijuvar/go-microservices-with-go-kit-introduction-43a757398183
+- [ ] Go Echo
+  * https://echo.labstack.com/
+  * https://github.com/labstack/echo
 
 ---
 
 ## Links
 
+### Articles
+#### Goroutines
+* https://medium.com/@riteeksrivastava/a-complete-journey-with-goroutines-8472630c7f5c
+#### Channels
+* https://www.sohamkamani.com/blog/2017/08/24/golang-channels-explained/
+* https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
+
 ### Tutorials
 * https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/ - `IN PROGRESS`
-	[next: Goroutines - Concurrency in Goprogramming]
+	[next: Goroutines - Concurrency in Goprogramming
+        https://pythonprogramming.net/go/goroutines-go-language-programming-tutorial/]
 * https://gobyexample.com/ - `IN PROGRESS`
-	[next: Goroutines]
+	[next: Mutex 
+        https://gobyexample.com/mutexes]
+* https://tour.golang.org/
+	[next: https://tour.golang.org/methods/2]
 * https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html
 * https://www.golang-book.com/books/intro
 * https://dlintw.github.io/gobyexample/public/index.html#by-sequence
+#### Testing
+* https://godoc.org/google.golang.org/grpc/examples/helloworld/mock_helloworld
 
 ### Govendor
-    https://github.com/kardianos/govendor
-    https://blog.gopheracademy.com/advent-2015/vendor-folder/
-    https://github.com/kardianos/spider
+* https://github.com/kardianos/govendor
+* https://blog.gopheracademy.com/advent-2015/vendor-folder/
+* https://github.com/kardianos/spider

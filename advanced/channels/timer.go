@@ -40,7 +40,7 @@ func main() {
 	}
 
 	/* PLEASE NOTE
-	The first timer will expire ~2s after we start the program, but the second should
-	be stopped before it has a chance to expire.
+	The first timer will expire ~3s after we start the program.
+	The second should be stopped before it has a chance to expire.
 	*/
 }

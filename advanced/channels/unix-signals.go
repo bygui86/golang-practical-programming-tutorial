@@ -18,7 +18,9 @@ import (
 */
 func main() {
 
-	defer fmt.Println("Sample terminated!")
+	fmt.Println("Sample started")
+
+	defer fmt.Println("Sample terminated")
 
 	// Go signal notification works by sending os.Signal values on a channel.
 	// We’ll create a channel to receive these notifications (we’ll also make one to notify
@@ -32,15 +34,17 @@ func main() {
 	// This goroutine executes a blocking receive for signals. When it gets one it’ll print
 	// it out and then notify the program that it can finish.
 	go func() {
+		fmt.Println("Goroutine waiting for OS signals...")
 		sig := <-osSignalChannel
 		fmt.Println()
 		fmt.Println(sig)
 		doneChannel <- true
+		fmt.Println("Goroutine terminated")
 	}()
 
 	// The program will wait here until it gets the expected signal (as indicated by the goroutine
 	// above sending a value on done) and then exit.
-	fmt.Println("Awaiting signal")
+	fmt.Println("Main waiting for bool signal...")
 	<-doneChannel
-	fmt.Println("Exiting...")
+	fmt.Println("Main terminated")
 }
