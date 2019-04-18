@@ -116,6 +116,9 @@ If you are creating a Go application that will not have subpackages, you can dev
 
 ### Advanced
 * modules (try `go help modules`)
+  * https://github.com/golang/go/wiki/Modules
+  * https://blog.golang.org/using-go-modules
+  * https://roberto.selbach.ca/intro-to-go-modules/
 
 ## Specific tecnologies
 * db
