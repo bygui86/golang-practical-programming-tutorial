@@ -115,6 +115,8 @@ If you are creating a Go application that will not have subpackages, you can dev
 ## Open topics
 
 ### Advanced
+* wait-groups
+  * https://tutorialedge.net/golang/go-waitgroup-tutorial/
 * modules (try `go help modules`)
   * https://github.com/golang/go/wiki/Modules
   * https://blog.golang.org/using-go-modules
@@ -133,6 +135,9 @@ If you are creating a Go application that will not have subpackages, you can dev
   - [ ] websocket > see [this repo](https://github.com/bygui86/websocket-samples)
 * docker
   - [x] dockerfile > see [this repo](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
+* kubernetes
+  - [ ] prometheus metrics
+  - [ ] jaeger tracing
 * others
   - [x] protobuf > see [this repo](https://github.com/bygui86/go-protobuf)
   - [x] kafka > see [this repo](https://github.com/bygui86/go-kafka)
@@ -160,15 +165,15 @@ If you are creating a Go application that will not have subpackages, you can dev
 #### Channels
 * https://www.sohamkamani.com/blog/2017/08/24/golang-channels-explained/
 * https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8
+### Environment variables
+* https://stackoverflow.com/questions/40326540/how-to-assign-default-value-if-env-var-is-empty
+* https://codereview.stackexchange.com/questions/108563/reading-environment-variables-of-various-types
 
 ### Tutorials
+* https://gobyexample.com/
 * https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/ - `IN PROGRESS`
-	[next: Goroutines - Concurrency in Goprogramming
-        https://pythonprogramming.net/go/goroutines-go-language-programming-tutorial/]
-* https://gobyexample.com/ - `IN PROGRESS`
-	[next: Mutex 
-        https://gobyexample.com/mutexes]
-* https://tour.golang.org/
+	[next: Goroutines - Concurrency in Goprogramming / https://pythonprogramming.net/go/goroutines-go-language-programming-tutorial/]
+* https://tour.golang.org/ - `IN PROGRESS`
 	[next: https://tour.golang.org/methods/2]
 * https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html
 * https://www.golang-book.com/books/intro
