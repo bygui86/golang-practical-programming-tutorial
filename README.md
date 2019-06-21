@@ -117,6 +117,8 @@ If you are creating a Go application that will not have subpackages, you can dev
 ### Advanced
 * wait-groups
   * https://tutorialedge.net/golang/go-waitgroup-tutorial/
+* context
+  * https://blog.golang.org/context
 * modules (try `go help modules`)
   * https://github.com/golang/go/wiki/Modules
   * https://blog.golang.org/using-go-modules
@@ -135,12 +137,21 @@ If you are creating a Go application that will not have subpackages, you can dev
   - [ ] websocket > see [this repo](https://github.com/bygui86/websocket-samples)
 * docker
   - [x] dockerfile > see [this repo](https://github.com/bygui86/go-kafka/blob/master/consumer/Dockerfile)
+* logging
+  - [x] library
+    - [x] go-logging > see [this folder](logs)
+    - [ ] logger
+    - [ ] logrus
+    - [ ] klog
+    - [ ] on-file
 * kubernetes
   - [ ] prometheus metrics
   - [ ] jaeger tracing
-* others
+* communication
   - [x] protobuf > see [this repo](https://github.com/bygui86/go-protobuf)
   - [x] kafka > see [this repo](https://github.com/bygui86/go-kafka)
+    - [x] shopify sarama > see [this repo](https://github.com/bygui86/go-kafka)
+    - [ ] segmentio kafka-go
 * testing
   - [ ] principles
   - [ ] moking
