@@ -109,6 +109,10 @@ If you are creating a Go application that will not have subpackages, you can dev
   * range over
 * spawning processes
 * exec'ing processes
+* modules (try `go help modules`)
+  * https://github.com/golang/go/wiki/Modules
+  * https://blog.golang.org/using-go-modules
+  * https://roberto.selbach.ca/intro-to-go-modules/
 
 ---
 
@@ -119,10 +123,6 @@ If you are creating a Go application that will not have subpackages, you can dev
   * https://tutorialedge.net/golang/go-waitgroup-tutorial/
 * context
   * https://blog.golang.org/context
-* modules (try `go help modules`)
-  * https://github.com/golang/go/wiki/Modules
-  * https://blog.golang.org/using-go-modules
-  * https://roberto.selbach.ca/intro-to-go-modules/
 
 ## Specific tecnologies
 * db
