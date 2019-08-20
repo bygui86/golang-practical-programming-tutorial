@@ -33,7 +33,7 @@ Thumbs.db
 ########### GoLand
 
 ########### Visual Studio Code
-.vscode
+# .vscode
 *.code-workspace
 
 
