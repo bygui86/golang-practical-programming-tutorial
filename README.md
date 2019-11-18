@@ -191,6 +191,12 @@ If you are creating a Go application that will not have subpackages, you can dev
 * https://dlintw.github.io/gobyexample/public/index.html#by-sequence
 #### Testing
 * https://godoc.org/google.golang.org/grpc/examples/helloworld/mock_helloworld
+#### Sync
+* https://medium.com/better-programming/using-synchronization-primitives-in-go-mutex-waitgroup-once-2e50359cb0a7
+#### Interface
+* https://medium.com/better-programming/a-real-world-example-of-go-interfaces-98e89b2ddb67
+### Compisition
+* https://golangbot.com/inheritance/
 
 ### Govendor
 * https://github.com/kardianos/govendor

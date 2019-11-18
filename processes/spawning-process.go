@@ -7,8 +7,7 @@ import "os/exec"
 /*
 Sometimes our Go programs need to spawn other, non-Go processes.
 
-We omit error checks in the above example, but you could use the usual `if err != nil`
-pattern for all of them.
+We omit error checks in the example, but you could use the usual `if err != nil` pattern for all of them.
 */
 func main() {
 

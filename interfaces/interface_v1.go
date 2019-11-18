@@ -2,13 +2,16 @@ package main
 
 import "log"
 
+// Interface
 type Interface interface {
 	Method(string) string
 }
 
+// Struct to implement the interface
 type T struct{}
 
-func (T) Method(str string) string {
+// Interface methods implementation on the declared Struct
+func (t T) Method(str string) string {
 	return str
 }
 

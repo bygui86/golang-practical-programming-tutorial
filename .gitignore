@@ -31,9 +31,10 @@ Thumbs.db
 ###################### IDE configurations #######
 
 ########### GoLand
+.idea
 
 ########### Visual Studio Code
-# .vscode
+.vscode
 *.code-workspace
 
 

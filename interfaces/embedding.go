@@ -10,12 +10,12 @@ type Interface1 interface {
 }
 type Interface2 interface {
 	Method2(string)
-	Interface1 //Embedding Interface1
+	Interface1 // Embedding Interface1
 }
 
 type Interface3 interface {
 	Method3(string) bool
-	Interface2 //Embedding Interface2
+	Interface2 // Embedding Interface2
 }
 
 type T struct{}
