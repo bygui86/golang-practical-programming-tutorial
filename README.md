@@ -195,8 +195,10 @@ If you are creating a Go application that will not have subpackages, you can dev
 * https://medium.com/better-programming/using-synchronization-primitives-in-go-mutex-waitgroup-once-2e50359cb0a7
 #### Interface
 * https://medium.com/better-programming/a-real-world-example-of-go-interfaces-98e89b2ddb67
-### Compisition
+#### Compisition
 * https://golangbot.com/inheritance/
+#### Reflection
+* https://medium.com/better-programming/understand-reflect-in-go-24a68fcf1011
 
 ### Govendor
 * https://github.com/kardianos/govendor
