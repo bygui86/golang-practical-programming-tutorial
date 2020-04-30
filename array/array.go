@@ -37,4 +37,18 @@ func main() {
 		}
 	}
 	fmt.Println("2d: ", twoD)
+
+	intArray := [...]int{1, 2}
+	passByRef(&intArray)
+	passByCopy(intArray)
+}
+
+func passByRef(slice *[2]int) {
+	fmt.Printf("pointer: %p\n", slice)
+	fmt.Println("value:", *slice)
+}
+
+func passByCopy(array [2]int) {
+	fmt.Printf("pointer: %p\n", &array)
+	fmt.Println("value:", array)
 }
