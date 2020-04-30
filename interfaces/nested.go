@@ -2,14 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	user1 := User{"Dirk", "dirk@email.com", EmailNotifier{}}
-	user2 := User{"Justin", "bieber@email.com", SmsNotifier{}}
-
-	user1.notify("Welcome Email user!")
-	user2.notify("Welcome SMS user!")
-}
-
 type User struct {
 	Name     string
 	Email    string
@@ -36,4 +28,12 @@ type SmsNotifier struct{}
 func (notifier SmsNotifier) SendMessage(user *User, message string) error {
 	_, err := fmt.Printf("Sending SMS to %s with content %s\n", user.Name, message)
 	return err
+}
+
+func main() {
+	user1 := User{"Dirk", "dirk@email.com", EmailNotifier{}}
+	user2 := User{"Justin", "bieber@email.com", SmsNotifier{}}
+
+	user1.notify("Welcome Email user!")
+	user2.notify("Welcome SMS user!")
 }
