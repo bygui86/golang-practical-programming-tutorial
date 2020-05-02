@@ -23,20 +23,24 @@ type post struct {
 func (p *post) details() {
 	fmt.Println("Title: ", p.title)
 	fmt.Println("Content: ", p.content)
-	fmt.Println("Author: ", p.fullName())
 	fmt.Println("Bio: ", p.bio)
+	fmt.Println("First name: ", p.author.firstName)
+	fmt.Println("Last name: ", p.author.lastName)
+	fmt.Println("Author full name: ", p.fullName())
 }
 
 func main() {
-	author1 := author{
+	author := author{
 		"Naveen",
 		"Ramanathan",
 		"Golang Enthusiast",
 	}
-	post1 := post{
-		"Inheritance in Go",
-		"Go supports composition instead of inheritance",
-		author1,
+
+	post := post{
+		"Composition (a.k.a. Inheritance) in Go",
+		"Go supports composition instead of inheritance :(",
+		author,
 	}
-	post1.details()
+
+	post.details()
 }
