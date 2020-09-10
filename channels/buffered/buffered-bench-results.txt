@@ -1,0 +1,45 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/bygui86/golang-practical-programming-tutorial/channels/buffered
+BenchmarkWithNoBuffer-16                             	    3681	    321711 ns/op
+BenchmarkWithNoBuffer-16                             	    3476	    319570 ns/op
+BenchmarkWithNoBuffer-16                             	    3390	    320160 ns/op
+BenchmarkWithNoBuffer-16                             	    3678	    314151 ns/op
+BenchmarkWithNoBuffer-16                             	    3670	    316826 ns/op
+BenchmarkWithNoBuffer-16                             	    3675	    314880 ns/op
+BenchmarkWithNoBuffer-16                             	    3272	    323566 ns/op
+BenchmarkWithNoBuffer-16                             	    3631	    320745 ns/op
+BenchmarkWithNoBuffer-16                             	    3639	    317105 ns/op
+BenchmarkWithNoBuffer-16                             	    3655	    318208 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4125	    279982 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4124	    280579 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4117	    279999 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4160	    279425 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4132	    278988 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4089	    280732 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4081	    280352 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4120	    280326 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4172	    280770 ns/op
+BenchmarkWithBuffer_SizeOf1-16                       	    4172	    278786 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5916	    197492 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5862	    197366 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5983	    198085 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5995	    197894 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5930	    196683 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5832	    197269 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    6062	    197221 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    6058	    196084 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    5961	    197257 ns/op
+BenchmarkWithBuffer_SizeEqualsToNumberOfWorker-16    	    6060	    197375 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8824	    131264 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8722	    132591 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8832	    133171 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    9000	    132856 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8859	    132346 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8983	    132646 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8786	    132894 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8563	    136300 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8608	    137742 ns/op
+BenchmarkWithBuffer_SizeExceedsNumberOfWorker-16     	    8486	    138271 ns/op
+PASS
+ok  	github.com/bygui86/golang-practical-programming-tutorial/channels/buffered	47.791s
